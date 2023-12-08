@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: white;
+    width: 100%;
+}
+header{
+    width: 100%;
+}
+
+header img:hover{
+    transform: scale(1.10);
+    transition: transform ease 1s;
+}
+
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+
+.container_interface ul {
+    display: flex;
+    list-style: none;
+}
+
+.container_interface ul li img{
+    padding: 8px 16px;
+    width: 50px; 
+}
+
+/*primeira section*/
+
+.banner{
+    padding: 0;
+    height: 300px;
+    overflow: hidden;
+}
+
+.zoom{
+    height: 100%;
+    margin: 0;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    transition: transform ease 5s;
+}
+
+.banner img:hover{
+    transform: scale(1.2);
+    
+}
+
+
+/*SEGUNDA SECTION*/
+
+
+.conteudo{
+    padding: 20px 50px;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/*produtos*/
+
+.container_produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 20px 20px 20px 20px;
+}
+
+.container_produtos img{
+    width: 100%;
+    display: block;
+    transition: transform ease 1.3s;
+}
+
+.produto{
+    width: 300px;
+    margin-bottom: 50px;
+}
+.detalhes{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+figure{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px 10px;
+}
+
+figcaption{
+    position: absolute;
+    background-color: silver;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform ease 1s;
+    background-color: rgba(92, 167, 32, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 2px 13px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 0 rgba(128, 128, 128, 0.8);
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+}
+
+figure:hover figcaption{
+    transform: translateY(0);
+    border-radius: 10px 10px;
+}
+
+figure:hover img{
+    transform: scale(1.2);
+}
+
+span{
+    color: green;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 2px solid green;    
+}
+
+
+button:hover{
+    background-color:  rgba(65, 28, 1, 0.871);
+}
+
+ button:active{
+    background-color: rgba(65, 28, 1, 0.871);
+    box-shadow: 0 rgba(65, 28, 1, 0.871);
+    transform: translateY(2px);
+}
+
+
+/*footer*/
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    height: 150px;
+    border-top: 1px solid gainsboro;
+}
+
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container_footer a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 525;
+}
+
+.container_footer ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+
+/*footer formulario*/
+
+.container_formulario{
+    width: 30%;
+}
+
+.container_formulario h4{
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+#form{
+    all: unset;
+    width: 60%;
+    height: 30px;
+    font-size: 100%;
+    border: 1px solid gainsboro;
+}
+
+
+.container_formulario button {
+    background-color: green;
+    color: white;
+    border-radius: 0 0 0 0;
+    cursor: pointer;
+    box-shadow: 1px 3px 6px 0 rgba(128, 128, 128, 0.8);
+    width: 120px;
+    height: 33px;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color:  rgba(65, 28, 1, 0.871);
+}
+
+button:active{
+    background-color: rgba(65, 28, 1, 0.871);
+    box-shadow: 0 rgba(65, 28, 1, 0.871);
+    transform: translateY(2px);
+}
+
+.final{
+    border-top: 1px solid gainsboro;
+    padding: 0 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 30px;
+}
+
+/*responsividade*/
+
+@media screen and (max-width: 450px){
+    header{
+        width: 100%;
+    }
+    
+    header img:hover{
+        transform: scale(1.10);
+        transition: transform ease 1s;
+    }
+    
+    .container-1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 4px;
+    }
+
+    .logo{
+        margin-left: 4px;
+    }
+
+    
+    .container_interface ul {
+        display: flex;
+        list-style: none;
+        margin-left: 140px;
+    }
+    
+    .container_interface ul li img{
+        padding: 8px 16px;
+        width: 50px; 
+    }
+
+    /*primeira section*/
+
+.banner{
+    padding: 0;
+    height: 100px;
+    overflow: hidden;
+}
+
+.zoom{
+    height: 100%;
+    margin: 0;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    transition: transform ease 5s;
+}
+
+.banner img:hover{
+    transform: scale(1.2);
+    
+}
+
+.informacoes{
+    font-weight: 700;
+    align-items: center;
+}
+
+
+.detalhes{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+        height: 45vh;
+    }
+
+    .container_footer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 50vh;
+    }
+
+    .container_formulario{
+        width: 50vh;
+    }
+
+    #form{
+        all: unset;
+        width: 100%;
+        height: 40px;
+        border: 1px solid gainsboro;
+        font-size: 14px;
+    }
+
+    .container_formulario button {
+        background-color: green;
+        color: white;
+        border-radius: 0 0 0 0;
+        cursor: pointer;
+        box-shadow: 1px 3px 6px 0 rgba(128, 128, 128, 0.8);
+        width: 100%;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+        padding: 50px;
+    }
+
+
+    .redes{
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .card{
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+}
